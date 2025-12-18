@@ -1,41 +1,51 @@
+/* 全局样式 */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #0b0f1a;
+  background: #1f2937; /* 更明亮的深灰蓝 */
   color: #e5e7eb;
 }
+
+/* 页眉 */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 50px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(31, 41, 55, 0.85); /* 半透明背景，略浅 */
   backdrop-filter: blur(10px);
 }
+
 .logo {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 .nav a {
   color: #e5e7eb;
   margin-left: 25px;
   text-decoration: none;
   font-weight: 500;
 }
+
+/* Hero 区域 */
 .hero {
   padding: 120px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #111827, #020617);
+  background: linear-gradient(135deg, #374151, #1f2937); /* 渐变更柔和 */
 }
+
 .hero h1 {
   font-size: 42px;
   margin-bottom: 20px;
 }
+
 .hero p {
   font-size: 18px;
   opacity: 0.85;
 }
+
 .hero-buttons .btn {
   margin: 10px;
   padding: 14px 32px;
@@ -46,17 +56,29 @@ body {
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+.hero-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 .hero-buttons .secondary {
   background: linear-gradient(135deg, #22d3ee, #6366f1);
 }
+
+/* Section 区域 */
 .section {
   padding: 80px 50px;
   text-align: center;
+  background: #374151; /* 温和背景色 */
 }
-.dark {
-  background: #020617;
+
+.section.dark {
+  background: #1f2937; /* 深色区块，稍明亮 */
 }
+
 .service-list, .jobs {
   list-style: none;
   padding: 0;
@@ -64,14 +86,25 @@ body {
   max-width: 600px;
   margin: 30px auto;
 }
+
 .service-list li, .jobs li {
   padding: 12px 0;
   font-size: 16px;
 }
+
+/* Footer */
 .footer {
-  background: #000;
+  background: #111827; /* 稍浅黑色 */
   padding: 25px;
   text-align: center;
   font-size: 14px;
 }
 
+/* 响应式 */
+@media screen and (max-width: 768px) {
+  .header { flex-direction: column; padding: 15px; }
+  .nav a { margin: 10px 0; }
+  .hero h1 { font-size: 32px; }
+  .hero p { font-size: 16px; }
+  .hero-buttons .btn { padding: 12px 28px; font-size: 14px; }
+}
