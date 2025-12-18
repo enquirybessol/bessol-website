@@ -1,27 +1,86 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BesSol 中文页面</title>
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">BesSol</div>
-    <nav class="nav">
-      <a href="../en/index.html">EN</a>
-      <a href="index.html">中文</a>
-      <a href="../bm/index.html">BM</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>✅ BesSol 中文页面已就绪</h1>
-    <p>如果你能看到此页面，说明 GitHub Pages 配置正确。</p>
-  </section>
+<header class="header">
+  <div class="logo">BesSol</div>
+  <nav class="nav">
+    <a href="../en/index.html">EN</a>
+    <a href="index.html">中文</a>
+    <a href="../bm/index.html">BM</a>
+    <a href="#jobs" onclick="scrollToJobs(); return false;">招聘职位</a>
+    <a href="#contact" onclick="scrollToContact(); return false;">联系我们</a>
+  </nav>
+</header>
 
-  <footer class="footer">
-    <p>© 2025 BesSol | HR & Recruitment Solutions Malaysia</p>
-  </footer>
+<section class="hero">
+  <h1>现代化人力资源、招聘与合规合作伙伴</h1>
+  <p>为马来西亚的雇主和求职者提供支持</p>
+  <div class="hero-buttons">
+    <a class="btn" href="https://wa.me/60107761164" target="_blank">雇主</a>
+    <a class="btn secondary" href="#jobs" onclick="scrollToJobs(); return false;">求职者</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>关于 BesSol</h2>
+  <p>
+    BesSol 是一家马来西亚人力资源咨询公司，提供招聘、HR 外包和合规解决方案。
+    我们与雇主和求职者紧密合作，打造合规、高效、以人为本的工作环境。
+  </p>
+</section>
+
+<section class="section dark">
+  <h2>我们的服务</h2>
+  <ul class="service-list">
+    <li><strong>招聘</strong> – 本地和外籍招聘、高管寻访及批量招聘</li>
+    <li><strong>HR 外包</strong> – 工资处理、HR 运作与咨询</li>
+    <li><strong>HR 合规</strong> – 劳工法、法定要求、风险管理、员工手册、HRMS & KPI</li>
+  </ul>
+</section>
+
+<section id="jobs" class="section">
+  <h2>当前招聘职位</h2>
+  <ul class="jobs">
+    <li>
+      人力资源专员 – 吉隆坡
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp 申请</a>
+    </li>
+    <li>
+      招聘顾问 – 雪兰莪
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp 申请</a>
+    </li>
+    <li>
+      合规 / 运营专员 – 柔佛
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp 申请</a>
+    </li>
+  </ul>
+</section>
+
+<section id="contact" class="section dark">
+  <h2>联系我们</h2>
+  <p>Email: enquiry_bessol@gmail.com</p>
+  <p>WhatsApp: <a href="https://wa.me/60107761164" target="_blank">010-776 1164</a></p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 BesSol | HR & Recruitment Solutions Malaysia</p>
+</footer>
+
+<script>
+function scrollToJobs() {
+  document.getElementById('jobs').scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToContact() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
