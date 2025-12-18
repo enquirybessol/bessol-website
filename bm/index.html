@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BesSol Halaman Bahasa Malaysia</title>
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">BesSol</div>
-    <nav class="nav">
-      <a href="../en/index.html">EN</a>
-      <a href="../zh/index.html">中文</a>
-      <a href="index.html">BM</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>✅ Halaman BesSol BM Berfungsi</h1>
-    <p>Jika anda boleh melihat halaman ini, GitHub Pages telah dikonfigurasi dengan betul.</p>
-  </section>
+<header class="header">
+  <div class="logo">BesSol</div>
+  <nav class="nav">
+    <a href="../en/index.html">EN</a>
+    <a href="../zh/index.html">中文</a>
+    <a href="index.html">BM</a>
+    <a href="#jobs" onclick="scrollToJobs(); return false;">Jawatan</a>
+    <a href="#contact" onclick="scrollToContact(); return false;">Hubungi</a>
+  </nav>
+</header>
 
-  <footer class="footer">
-    <p>© 2025 BesSol | HR & Recruitment Solutions Malaysia</p>
-  </footer>
+<section class="hero">
+  <h1>Rakan Kongsi HR, Pengambilan & Pematuhan Moden</h1>
+  <p>Menyokong Majikan & Pencari Kerja di seluruh Malaysia</p>
+  <div class="hero-buttons">
+    <a class="btn" href="https://wa.me/60107761164" target="_blank">Majikan</a>
+    <a class="btn secondary" href="#jobs" onclick="scrollToJobs(); return false;">Pencari Kerja</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Mengenai BesSol</h2>
+  <p>
+    BesSol ialah syarikat perunding HR berasaskan Malaysia yang menyediakan
+    penyelesaian pengambilan, HR outsourcing dan pematuhan.
+    Kami bekerjasama dengan majikan dan pencari kerja untuk
+    mewujudkan tempat kerja yang cekap, patuh dan berfokuskan manusia.
+  </p>
+</section>
+
+<section class="section dark">
+  <h2>Perkhidmatan Kami</h2>
+  <ul class="service-list">
+    <li><strong>Pengambilan</strong> – Pengambilan tempatan & asing, carian eksekutif dan pengambilan pukal</li>
+    <li><strong>HR Outsourcing</strong> – Pemprosesan gaji, operasi HR & khidmat nasihat</li>
+    <li><strong>HR Pematuhan</strong> – Undang-Undang Buruh, Statutori, Pengurusan Risiko, Buku Panduan Pekerja, HRMS & KPI</li>
+  </ul>
+</section>
+
+<section id="jobs" class="section">
+  <h2>Jawatan Semasa</h2>
+  <ul class="jobs">
+    <li>
+      Eksekutif HR – Kuala Lumpur
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp Apply</a>
+    </li>
+    <li>
+      Perunding Pengambilan – Selangor
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp Apply</a>
+    </li>
+    <li>
+      Pegawai Pematuhan / Operasi – Johor
+      <a href="https://wa.me/60107761164" target="_blank">WhatsApp Apply</a>
+    </li>
+  </ul>
+</section>
+
+<section id="contact" class="section dark">
+  <h2>Hubungi BesSol</h2>
+  <p>Email: enquiry_bessol@gmail.com</p>
+  <p>WhatsApp: <a href="https://wa.me/60107761164" target="_blank">010-776 1164</a></p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 BesSol | HR & Recruitment Solutions Malaysia</p>
+</footer>
+
+<script>
+function scrollToJobs() {
+  document.getElementById('jobs').scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToContact() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
